@@ -1,6 +1,6 @@
 streamlit
 pandas
-PIL
+pillow
 pdfplumber
 pytesseract
 cv2
