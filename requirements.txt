@@ -5,6 +5,6 @@ pdfplumber
 pytesseract
 opencv-python
 numpy
-keras-preprocessing
 os
 tensorflow
+tempfile
