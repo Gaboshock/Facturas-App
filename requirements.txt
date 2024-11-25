@@ -3,7 +3,7 @@ pandas
 pillow
 pdfplumber
 pytesseract
-opencv
+opencv-python
 numpy
 keras
 tempfile
