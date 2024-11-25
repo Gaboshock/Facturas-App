@@ -11,9 +11,9 @@ import os
 
 st.set_page_config(layout="wide")
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "tesseract.exe"
 
-NN=load_model(r"C:\Users\gabri\Documents\9no semestre\Redes Neuronales\base_final.keras")
+NN=load_model('base_final.keras')
 
 st.markdown("""
   <style>
@@ -28,7 +28,7 @@ st.header("SIIA AVALUOS")
 st.subheader("Validación de facturas", divider='orange')
 col1, col2, col3, col4= st.columns([2,3,3,1])
 
-img=Image.open(r'C:\Users\gabri\Documents\9no semestre\Redes Neuronales\basketball.jpg')
+img=Image.open('siia.jpg')
 col1.image(img, use_column_width=True )
 
 excel=col3.file_uploader("Arrastra o sube la hoja de cálculo.", type=['xls'])
