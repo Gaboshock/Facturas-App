@@ -3,7 +3,7 @@ pandas
 pillow
 pdfplumber
 pytesseract
-opencv-python
+opencv-python-headless
 numpy
 tensorflow
 ffmpeg
