@@ -2,7 +2,7 @@ streamlit
 pandas
 pillow
 pdfplumber
-pytesseract
+pytesseract==0.3.13
 opencv-python-headless
 numpy
 tensorflow
