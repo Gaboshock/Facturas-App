@@ -1,0 +1,10 @@
+streamlit
+pandas
+PIL
+pdfplumber
+pytesseract
+cv2
+numpy
+keras
+tempfile
+os
