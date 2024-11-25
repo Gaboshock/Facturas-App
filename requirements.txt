@@ -5,6 +5,5 @@ pdfplumber
 pytesseract
 opencv-python
 numpy
-os
 tensorflow
 tempfile
