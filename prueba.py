@@ -9,9 +9,9 @@ import pandas as pd
 import tempfile
 import os
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title= "SIIA FACTURAS",layout="wide")
 
-pytesseract.pytesseract.tesseract_cmd = "tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 NN=load_model('base_final.keras')
 
