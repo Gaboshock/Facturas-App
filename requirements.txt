@@ -6,6 +6,5 @@ pytesseract
 opencv-python
 numpy
 keras-preprocessing
-tempfile
 os
 tensorflow
