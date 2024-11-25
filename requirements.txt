@@ -6,3 +6,6 @@ pytesseract
 opencv-python
 numpy
 tensorflow
+ffmpeg
+libsm6
+libxext6
