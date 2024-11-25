@@ -6,4 +6,3 @@ pytesseract
 opencv-python
 numpy
 tensorflow
-tempfile
