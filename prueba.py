@@ -114,7 +114,7 @@ if(B):
                             digitos_imagenes.append(digito)
                             col23.write(digito.shape)
 
-                        digitos_imagenes = [cv2.resize(digito, (32, 32)) for digito in digitos_imagenes]
+                        digitos_imagenes = [cv2.resize(digito, (32, 32), interpolation=cv2.INTER_CUBIC) for digito in digitos_imagenes]
 
                         digitos_erosion = []
                         for i, digit in enumerate(digitos_imagenes):
