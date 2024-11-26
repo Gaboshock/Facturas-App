@@ -110,8 +110,9 @@ if(B):
 
                         for c in contornos_digitos:
                             x, y, w, h = cv2.boundingRect(c)
-                            digito = blanco_negro[y-3:y+h+3, x-3:x+w+3]
-                            digitos_imagenes.append(digito)
+                            if w > 8:
+                              digito = blanco_negro[y-3:y+h+3, x-3:x+w+3]
+                              digitos_imagenes.append(digito)
                             #col23.write(digito.shape)
 
                         digitos_imagenes = [cv2.resize(digito, (32, 32), interpolation=cv2.INTER_CUBIC) for digito in digitos_imagenes]
