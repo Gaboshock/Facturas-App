@@ -112,7 +112,7 @@ if(B):
                             x, y, w, h = cv2.boundingRect(c)
                             digito = blanco_negro[y-3:y+h+3, x-3:x+w+3]
                             digitos_imagenes.append(digito)
-                            col23.write(digito)
+                            col23.write(digito.shape)
 
                         digitos_imagenes = [cv2.resize(digito, (32, 32)) for digito in digitos_imagenes]
 
