@@ -62,7 +62,7 @@ if(B):
             for P in facturas:
                 with pdfplumber.open(P) as pdf:
                     pagina = pdf.pages[0]
-                    im = pagina.to_image(resolution=270).original
+                    im = pagina.to_image(resolution=280).original
                     im=ImageOps.invert(im)
                         
                     largo=im.size[0]
