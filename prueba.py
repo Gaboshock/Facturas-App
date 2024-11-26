@@ -73,7 +73,7 @@ if(B):
                     for i, texto in enumerate(datos["text"]):
                             if "total" in texto.lower():
                                 x, y, w, h = datos["left"][i], datos["top"][i], datos["width"][i], datos["height"][i]
-                                #print(f"Palabra 'Total' encontrada en: ({x}, {y}, {w}, {h})")
+                                col23.write(f"Palabra 'Total' encontrada en: ({x}, {y}, {w}, {h})")
 
                                 seccion = im.crop((x+2*w, y-8, largo, y + h + 10))
                                 validar_total_encontrado=1
