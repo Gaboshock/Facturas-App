@@ -73,7 +73,7 @@ if(B):
                     for i, texto in enumerate(datos["text"]):
                             if "total" in texto.lower():
                                 x, y, w, h = datos["left"][i], datos["top"][i], datos["width"][i], datos["height"][i]
-                                col23.write(f"Palabra 'Total' encontrada en: ({x}, {y}, {w}, {h})")
+                                #col23.write(f"Palabra 'Total' encontrada en: ({x}, {y}, {w}, {h})")
 
                                 seccion = im.crop((x+2*w, y-8, largo, y + h + 10))
                                 validar_total_encontrado=1
@@ -112,7 +112,7 @@ if(B):
                             x, y, w, h = cv2.boundingRect(c)
                             digito = blanco_negro[y-3:y+h+3, x-3:x+w+3]
                             digitos_imagenes.append(digito)
-                            col23.write(digito.shape)
+                            #col23.write(digito.shape)
 
                         digitos_imagenes = [cv2.resize(digito, (32, 32), interpolation=cv2.INTER_CUBIC) for digito in digitos_imagenes]
 
